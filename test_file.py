@@ -1,5 +1,13 @@
-print('hello world')
+my_workouts = []
 
-print('random message')
+def log_workout(workout, workout_type, duration):
+    workout.append((workout_type, duration))
 
-print('new line text')
+log_workout(my_workouts, 'run', 30)
+log_workout(my_workouts, 'cycling', 30)
+log_workout(my_workouts, 'yoga', 30)
+log_workout(my_workouts, 'swiming', 30)
+
+print(my_workouts)
+
+
